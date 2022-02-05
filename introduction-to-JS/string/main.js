@@ -1,6 +1,6 @@
 'use strict';
 
-const input = document.querySelector("input");
+const input = document.querySelector("textarea");
 const form = document.querySelector("form");
 const result = document.querySelector("h4");
 
@@ -15,8 +15,6 @@ function countLetters(event){
         result.innerText = `현재까지 ${input.value.length}자 입력하셨습니다. 앞으로 ${leftLetters}자 더 입력가능합니다😄`
     }
 }
-
-
 
 form.addEventListener("submit", countLetters);
 
